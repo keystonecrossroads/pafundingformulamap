@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaflet example | CartoDB.js</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <!-- <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" /> -->
+    <link rel="shortcut icon" href="https://cartodb.com/assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <!-- <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" /> -->
+    <link rel="stylesheet" href="css/jquery.nstSlider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="Title">
+    <h2 class="bar">Pennsylvania State Basic Education Funding Per Pupil</h2>
+  </div>
+
+  <div class=slideOuter>
+    <div class=slideBox>
+    <div class="slideLabel">Amount Going Through Fair Funding Formula</div>
+    <div class="nstSlider" data-range_min="5.98" data-range_max="109"
+                         data-cur_min="5.98">
+
+      <div class="leftGrip"></div>
+
+  </div>
+  <div class="percLabel"></div>
+  <div class="leftLabel">5.98</div>
+  <div class="left2Label">25</div>
+  <div class="midLabel">50</div>
+  <div class="right2Label">75</div>
+  <div class="rightLabel">100</div>
+    </div>
+</div>
+  <div id="container"></div>
+  <div id="map"></div>
+    <div type="infowindow/html" style="left: 658px; visibility: visible; top: auto; bottom: 10px;" id="infowindow_template">
+      <div class="hello">
+        <div class="tip_container">
+        <h4 class='school'>School District</h4>
+        <p class='school_template'>{{name}}</p>
+        <h4 class='total_funding'>Total State Funding</h4>
+        <p class='total_funding_template'>{{tot_5_98}}<p>
+        <h4 class='pupil_funding'>State Funding per Pupil</h4>
+        <p class='pupil_funding_template'>{{pup_5_98}}<p>
+          <h4 class='pupil_funding'>Funding Rank</h4>
+          <p class='pupil_funding_template'>{{rank_5_98}}<p>
+        </div>
+      </div>
+    </div>
+    <!-- include cartodb.js library -->
+     <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.uncompressed.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"   integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="   crossorigin="anonymous"></script>
+    <script src="js/jquery.nstSlider.js"></script>
+    <script src="js/main.js"></script>
+    <!--  <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.uncompressed.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>-->
+    <!--<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"   integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="   crossorigin="anonymous"></script>-->
+    <!--<script src="js/jquery.nstSlider.js"></script>-->
+    <!--<script src="js/main.js"></script>-->
+  </body>
+</html>
