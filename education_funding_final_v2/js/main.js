@@ -93,7 +93,9 @@ function slideFunc(theLayer, thefunc, theID){
             layer_selector: false,
             https: true,
             scrollwheel: true,
-
+            zoomControl: false,
+            fullscreen: false
+            
           })
           .done(function(vis, layers) {
 
